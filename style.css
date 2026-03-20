@@ -1,60 +1,87 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #eaeded;
 }
 
+/* NAVBAR */
 .navbar {
-    background-color: #131921;
-    color: white;
-    display: flex;
-    padding: 10px;
-    align-items: center;
-    gap: 10px;
+  background-color: #131921;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
 }
 
 .logo {
-    font-size: 20px;
-    font-weight: bold;
+  font-size: 22px;
+  font-weight: bold;
 }
 
-.navbar input {
-    flex: 1;
-    padding: 5px;
+.search-bar {
+  display: flex;
+  width: 50%;
 }
 
-.navbar button {
-    padding: 6px 10px;
-    background-color: orange;
-    border: none;
-    cursor: pointer;
+.search-bar input {
+  width: 100%;
+  padding: 8px;
 }
 
-.banner {
-    background-color: #febd69;
-    padding: 40px;
-    text-align: center;
+.search-bar button {
+  padding: 8px;
+  background-color: #febd69;
+  border: none;
 }
 
+.nav-links span {
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+/* MENU */
+.menu {
+  background-color: #232f3e;
+  color: white;
+  padding: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+/* HERO */
+.hero {
+  background: url('https://via.placeholder.com/1200x300') no-repeat center;
+  background-size: cover;
+  color: black;
+  padding: 50px;
+  text-align: center;
+}
+
+/* PRODUCTS */
 .products {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: -80px;
+  padding: 20px;
 }
 
-.card {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-    width: 150px;
+.box {
+  background: white;
+  padding: 15px;
+  width: 22%;
 }
 
-.card img {
-    width: 100%;
+.box-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
 
-.card button {
-    background-color: orange;
-    border: none;
-    padding: 5px;
-    cursor: pointer;
+.box img {
+  width: 100%;
+}
+
+.box h3 {
+  font-size: 16px;
 }
